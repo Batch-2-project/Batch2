@@ -1,0 +1,82 @@
+.img{
+  height: 55px;
+  width: 180px;
+  background-size: cover; 
+
+}
+.btn1{
+  height: 40px;
+  width: auto;
+  border-radius: 20px;
+  color: black;
+  border-color: black;
+  background-color: orange;
+  background-size: cover;
+  font-size: 10px;
+  font-family: "Roboto";
+}
+.btn2{
+  height: 40px;
+  width: auto;
+  border-radius: 20px;
+  color: black;
+  border-color: black;
+  background-color: lightpink;
+  background-size: cover;
+  font-size: 10px;
+  font-family: "Roboto";
+}
+.btn{
+  height: 40px;
+  width: auto;
+  border-radius: 20px;
+  color: black;
+  border-color: black;
+  background-color: white;
+  background-size: cover;
+  font-size: 10px;
+  font-family: "Roboto";
+}
+.img1{
+  height: 140px;
+  width: 320px;
+  background-size: cover;
+}
+.img2{
+  height: 70vh;
+  width: 45vw;;
+  background-size:cover;
+}
+.para{
+  font-size: 20px;
+  font-family: "Roboto";
+  color: grey;
+}
+.btn3{
+  height: 35px;
+  width: 85px;
+  border-radius: 25px;
+  color: black;
+  border-color: black;
+  background-color: lightpink;
+  background-size: cover;
+  font-size: 10px;
+  font-family: "Roboto";
+}
+.head{
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 25px;
+}
+.btn4{
+  height: 35px;
+  width: 105px;
+  border-radius: 25px;
+  color: white;
+  border-color: black;
+  background-color: black;
+  background-size: cover;
+  font-size: 10px;
+  font-family: "Roboto";
+}

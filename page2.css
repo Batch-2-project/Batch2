@@ -1,0 +1,79 @@
+.container{
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
+.head{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  font-family:"Roboto";
+}
+.p{
+  color: grey;
+  font-size: 20px;
+  font-weight: normal;
+  font-family:"Roboto";
+}
+.head1{
+  color:black;
+  font-size: 18px;
+  font-weight:bold;
+  font-family:"Roboto";
+}
+.input-text1{
+  border-radius: 8px;
+  height: 45px;
+  width: 400px;
+  border-color: grey;
+  color: grey;
+}
+.p1{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  font-family:"Roboto";
+}
+.p2{
+  font-size: 15px;
+  font-weight: bold;
+  font-family:"Roboto";
+}
+.button{
+  border-radius: 15px;
+  color: white;
+  background-color: lightseagreen;
+  font-size: 20px;
+  height: 45px;
+  width: 380px;
+  border-width: 1px;
+}
+.button1{
+  border-radius: 15px;
+  color: black;
+  background-color: white;
+  font-size: 15px;
+  height: 45px;
+  width: 380px;
+  border-width: 1px;
+  border-color: black;
+}
+.p3{
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  font-family:"Roboto";
+}
+.label{
+  padding-right: 50px;
+}
+.signup{
+  font-size: 15px;
+  color: black;
+  text-decoration: underline;
+  padding-left: 5px;
+}
+.forgot{
+  font-size: 18px;
+}
