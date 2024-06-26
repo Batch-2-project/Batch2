@@ -1,0 +1,74 @@
+.container{
+    background-color: white;
+    height: 125vh;
+    width: 100vw;
+    background-size: cover;
+  }
+  .image{
+    height: 125vh;
+    width: 40vw;
+    background-size: cover;
+  
+  }
+  .head{
+    color: black;
+    font-weight: bold;
+    font-size:35px;
+  }
+  .button2{
+    border-radius:5px;
+    color: black;
+    font-size: 10px;
+    height: 45px;
+    width: auto;
+  }
+  .input-text{
+    border-radius: 8px;
+    height: 45px;
+    width: 200px;
+    border-color: grey;
+    color: grey;
+  }
+  .input-text1{
+    border-radius: 8px;
+    height: 45px;
+    width: 400px;
+    border-color: grey;
+    color: grey;
+  }
+  .p{
+    color: grey;
+    font-size: 25px;
+    font-family: "Roboto";
+    font-weight: normal;
+  }
+  .head1{
+    color: black;
+    font-weight: bold;
+    font-size:22px;
+  }
+  .para{
+    color: black;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+  }
+  span{
+    font-weight: bold;
+  }
+  .button{
+    border-radius:5px;
+    color: black;
+    font-size: 15px;
+    height: 45px;
+    width: 380px;
+    border-radius: 15px;
+  }
+  .button1{
+    border-radius:5px;
+    color: black;
+    font-size: 15px;
+    height: 45px;
+    width: 380px;
+    border-radius: 15px;
+  }

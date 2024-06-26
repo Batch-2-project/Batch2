@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sipcalculator</title>
+    <link rel="sip" href="sip.css">
+</head>
+<body>
+<h1>SIP CALCULATOR</h1>
+<form>
+    <label for="investment">Monthly Investment:</label>
+    <input type="text" name="investment" id="investment" required><br><br>
+    <label for="rate">Expected Annual Return:</label>
+    <input type="text" name="rate" id="rate" required><br><br>
+    <label for="time">Investment Period(months):</label>
+    <input type="text" name="time" id="time" required><br><br>
+    <input type="button" id="return" value="Calculate" onclick="calculate()">
+</form>
+<div id="result"></div>
+<script src="sip.js"></script>
+</body>
+</html>

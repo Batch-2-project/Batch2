@@ -1,0 +1,274 @@
+<html>
+  <head>
+    <meta name="viewport" width="device-width,initial-scale=1.0">
+  </head>
+  <form action="{% url 'verify_otp' %}" method="post">
+    {% csrf_token %}
+    {% if password%}
+    <input type="hidden" name="email" value="{{ email }}">
+    <input type="hidden" name="password" value="{{ password }}">
+    <input type="hidden" name="first_name" value="{{ first_name }}">
+    <input type="hidden" name="last_name" value="{{ last_name }}">
+    {% else %}
+    <input type="hidden" name="email" value="{{ email }}">
+    {% endif%}
+    {% if error_message %}
+    <div class="error-message">{{ error_message }}</div>
+    {% endif %}
+  <div class="div">
+  <div class="div-2">
+    <div class="column">
+      <div class="div-3">
+        <div class="div-4">
+          <div class="div-5">Verification</div>
+        
+          <div class="div-6">
+            Enter your 4 digits code that you received on your email.
+          </div>
+          <div class="div-7">  
+            <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{}" class="div-8"/ name="otp_num1">
+            <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{}" class="div-9"/name="otp_num2">
+            <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{}" class="div-10"/name="otp_num3">
+            <input type="text" maxlength="1" size="1" min="0" max="9" pattern="[0-9]{}" class="div-11"/name="otp_num4">
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+          <div class="div-12">00:30</div>
+          <div class="div-13">
+            <span
+              style="
+                font-family: Outfit, -apple-system, Roboto, Helvetica,
+                  sans-serif;
+                color: rgba(130, 130, 130, 1);
+              "
+            >
+              If you didn’t receive a code!
+            </span>
+            <span
+              style="
+                font-family: Outfit, -apple-system, Roboto, Helvetica,
+                  sans-serif;
+              "
+            >
+            <a href="your_resend_action_or_url">Resend</a>
+            </span>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="column-2">
+      <img
+        loading="lazy"
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/8b02c425c1ddf3eb48f46bc882e3b273d3da18061a0a206ab93650215fdfd525?"
+        class="img"
+      />
+    </div>
+  </div>
+</div>
+
+<style>
+  .div {
+    background-color: #fff;
+    padding-left: 63px;
+  }
+  @media (max-width: 991px) {
+    .div {
+      padding-left: 20px;
+    }
+  }
+  .div-2 {
+    gap: 20px;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .div-2 {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0px;
+    }
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 48%;
+    margin-left: 0px;
+  }
+  @media (max-width: 991px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .div-3 {
+    display: flex;
+    margin-top: 313px;
+    flex-direction: column;
+  }
+  @media (max-width: 991px) {
+    .div-3 {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-4 {
+    border-radius: 25px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 43px 80px;
+  }
+  @media (max-width: 991px) {
+    .div-4 {
+      max-width: 100%;
+      padding: 0 20px;
+    }
+  }
+  .div-5 {
+    color: #000;
+    align-self: center;
+    white-space: nowrap;
+    font: 700 45px/116% Outfit, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-5 {
+      font-size: 40px;
+      white-space: initial;
+    }
+  }
+  .div-6 {
+    color: #828282;
+    letter-spacing: 0.15px;
+    margin-top: 54px;
+    width: 408px;
+    max-width: 100%;
+    font: 400 20px/24px Outfit, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-6 {
+      margin: 40px 0 0 4px;
+    }
+  }
+  .div-7 {
+    display: flex;
+    margin-top: 27px;
+    width: 408px;
+    max-width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-7 {
+      margin-left: 4px;
+    }
+  }
+  .div-8 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: flex;
+    height: 76px;
+    flex-direction: column;
+    flex: 1;
+    font-size: larger;
+  }
+  .div-9 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: flex;
+    height: 76px;
+    flex-direction: column;
+    flex: 1;
+    font-size: larger;
+  }
+  .div-10 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: flex;
+    height: 76px;
+    flex-direction: column;
+    flex: 1;
+    font-size: larger;
+  }
+  .div-11 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    display: flex;
+    height: 76px;
+    flex-direction: column;
+    flex: 1;
+    font-size: larger;
+  }
+  .div-12 {
+    color: var(--status-Wrong-Number, #f2451c);
+    text-align: center;
+    letter-spacing: 0.15px;
+    align-self: center;
+    margin-top: 47px;
+    font: 400 16px/150% Open Sans, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-12 {
+      margin-top: 40px;
+    }
+  }
+  .div-13 {
+    color: var(--status-Wrong-Number, #f2451c);
+    text-align: center;
+    letter-spacing: 0.25px;
+    align-self: center;
+    margin-top: 27px;
+    max-width: 256px;
+    font: 400 18px/20px Open Sans, sans-serif;
+  }
+  .div-14 {
+    justify-content: center;
+    color: #959cb6;
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    letter-spacing: 0.2px;
+    align-self: center;
+    margin-top: 214px;
+    font: 400 20px/100% Roboto, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-14 {
+      margin-top: 40px;
+    }
+  }
+  .column-2 {
+    display: flex;
+    flex-direction: column;
+    line-height: normal;
+    width: 52%;
+    margin-left: 20px;
+  }
+  @media (max-width: 991px) {
+    .column-2 {
+      width: 100%;
+    }
+  }
+  .img {
+    aspect-ratio: 0.7;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    flex-grow: 1;
+  }
+  @media (max-width: 991px) {
+    .img {
+      max-width: 100%;
+    }
+  }
+</style>
+</html>

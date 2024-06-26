@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="own.css">
+    <link rel="icon" href="{% static 'images/team-group-svgrepo-com.svg'%}">
+    <title>StartDeas</title>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>StraDeas</h1>
+        <form class="search-box">
+            <input type="search" placeholder="The field that i want to bring my startup">
+        </form>
+        <p>Results Count : 0</p>
+    </header>
+    <div class="results"></div>
+</div>
+<script src="{% static 'js/own.js'%}"></script>
+</body>
+
+</html>
